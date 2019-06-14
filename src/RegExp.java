@@ -4,7 +4,7 @@
 public class RegExp {
 
   /**
-   * Get IP address from text
+   * Get IP address from text.
    * @param text text to parse
    * @return String with IP address
    */

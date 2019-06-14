@@ -15,9 +15,9 @@ public class RegExpTest {
     return new Object[][]{
         {"8.8.8.8", "8.8.8.8"},
         {"http://192.168.1.1/index.html", "192.168.1.1"},
-        {"http://254.254.254.254/index.html", "254.254.254.254"},
-        {"http://-1.-2.-3.-4/index.html", ""},
-        {"300.300.300.300", ""}
+        {"This text contains a valid IP address 254.254.254.254, find it!", "254.254.254.254"},
+        {"IP could not have negative numbers like -1.-2.-3.-4", ""},
+        {" Invalid IP: 300.300.300.300!", ""}
         // TODO add 2 more test data here
     };
   }
